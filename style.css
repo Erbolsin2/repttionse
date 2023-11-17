@@ -26,6 +26,24 @@ nav>a:hover{
  height: 100px;
  margin: 100px 0px 0px 30px;
  display: block;
+ animation:log 0.5s infinite forwards;
+}
+@keyframes log{
+	0%{
+					transform:translate(0);
+	}
+	15%{
+					transform:translate(0px, 20px);
+	}
+	30%{
+					transform:translate(0);
+	}
+	45%{
+					transform:translate(0px, 20px);
+	}
+	100%{
+					transform:translate(0);
+	}
 }
 .but{
  color: rgb(223, 97, 97);
@@ -91,7 +109,18 @@ div.block>a{
 .block>span>span>img{
  width: 22px;
  margin: 6px 7px 0px 20px;
+ animation:star 3s infinite forwards;
 }
+@keyframes star{
+	0%{
+					transform:rotate(0);
+	}
+	100%{
+					transform:rotate(3turn);
+					font-family: unset;
+	}
+}
+
 .block>span>span,.xxx{
 	background-color: rgba(255, 255, 255, 0.25);
 }
@@ -110,5 +139,15 @@ div.block>a{
 }
 .score{
 	color: #dfcac5;
-
+}
+.loto{
+	animation:lotos 5s infinite forwards;
+}
+@keyframes lotos{
+	0%{
+			transform:translate(0);
+	}
+	100%{
+		   transform:translate(0,-250px);
+	}
 }
